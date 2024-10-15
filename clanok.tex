@@ -1,6 +1,6 @@
 % Metódy inžinierskej práce
 
-\documentclass[10pt,twoside,slovak,a4paper]{coursepaper}
+\documentclass[10pt,twoside,slovak,a4paper]{article}
 
 \usepackage[slovak]{babel}
 %\usepackage[T1]{fontenc}
@@ -9,48 +9,40 @@
 \usepackage{graphicx}
 \usepackage{url} % príkaz \url na formátovanie URL
 \usepackage{hyperref} % odkazy v texte budú aktívne (pri niektorých triedach dokumentov spôsobuje posun textu)
-
 \usepackage{cite}
 %\usepackage{times}
 
 \pagestyle{headings}
 
-\title{Názov\thanks{Semestrálny projekt v predmete Metódy inžinierskej práce, ak. rok 2015/16, vedenie: Meno Priezvisko}} % meno a priezvisko vyučujúceho na cvičeniach
+\title{Ako algoritmy ovplyvňujú naše voľby filmov, seriálov a hudby\thanks{Semestrálny projekt v predmete Metódy inžinierskej práce, ak. rok 20204/25, vedenie: Ing. Ivan Kaoustík}} % meno a priezvisko vyučujúceho na cvičeniach
 
 \author{Marcel Novomesky\\[2pt]
 	{\small Slovenská technická univerzita v Bratislave}\\
 	{\small Fakulta informatiky a informačných technológií}\\
-	{\small \texttt{...@stuba.sk}}
+	{\small \texttt{xnovomesky@stuba.sk}}
 	}
 
-\date{\small 30. september 2015} % upravte
+\date{\small 30. september 2024} % upravte
 
 
 
 \begin{document}
-
 \maketitle
-
 \begin{abstract}
-\ldots
+
+
+Primárnym zdrojom pre výber tejto témy bola štúdia o metódach odporúčania hudby. Tieto algoritmy analyzujú pužívatelské preferencie, a na základe histórie počúvania, hodnotenia a času stráveného pri jednotlivých žánroch vyberá najvhodnejšie odporúčania ktoré by sa mohli používateľovy páčiť. Tento článok \cite{9927924} ma inšpiroval širšie sa venovať týmto algoritmom a jejich podrobnému fungovaniu v praxi a uplatneniu. Hlavnú úlohu alebo teda problém ktorý rišia, je výber a odporúčanie hudby ktorá je vhodná pre daného používateľa. Práve preto sú aj tieto algoritmy klúčové pre fungovanie služieb ako napríklad Spotify alebo Youtube Music. Práve tieto firmy vyuižívajú podobné systémy na zaujatie používateľov a udržanie ich na platforme. Čím lepší odporúčiavací algoritmus, tým dlhšie si daná platforma dokáže udržať aktívných používateľov. Preto som sa aj venoval hybridnému odporúčaniu hudby. Tento systém sa od normalných systémov líši práve tým, že nevytrvára odporúčania iba na základe preferencie hudobného žánru používateľa, ale využíva aj takzvané kolaboratívne filtrovanie. Kolaboratívne filtrovanie je odporúčania na základe analýzy preferencií viacerých používateľov s podobnými zaujamamy o hudbu a žánre. Svoju pozornosť som venoval aj etickým aspektom týchto systémov, ako je aj ochrana súkromia či spracovanie používateľských dát. Dôležitá je aj transparentnosť o tom ako sú algoritmy používané a dáta spracované. 
 \end{abstract}
 
 
 
 \section{Úvod}
-
-Motivujte čitateľa a vysvetlite, o čom píšete. Úvod sa väčšinou nedelí na časti.
-
-Uveďte explicitne štruktúru článku. Tu je nejaký príklad.
-Základný problém, ktorý bol naznačený v úvode, je podrobnejšie vysvetlený v časti~\ref{nejaka}.
-Dôležité súvislosti sú uvedené v častiach~\ref{dolezita} a~\ref{dolezitejsia}.
-Záverečné poznámky prináša časť~\ref{zaver}.
+V dnešnej dobe zábavný priemysel čoraz viac využíva algoritmy na personalizované odporúčania filmov, seriálov a hudby. Preto som sa v mojej práci zameral na skúmanie toho, ako tieto systémy a algoritmy fungujú, aké dáta o používateľoch zbierajú a aké metódy sa využívajú na analýzu týchto dát. Zároveň sa pokúsim odpovedať na otázky, ako tieto alogritmy fungujú, či takéto odporúčania naozaj fungujú. 
 
 
 
-\section{Nejaká no časť} \label{nejaka}
+\section{Potrebnosť týchto algoritmov} \label{nejaka}
 
-Z obr.~\ref{f:rozhod} je všetko jasné. 
 
 \begin{figure*}[tbh]
 \centering
@@ -60,14 +52,9 @@ Aj text môže byť prezentovaný ako obrázok. Stane sa z neho označný pláva
 \label{f:rozhod}
 \end{figure*}
 
-\section{Nová časť} \label{nova_cast}
-
-Nová časť
-
-\input{novy.tex}
 
 
-\section{Iná časť} \label{ina}
+\section{Hybridné algoritmy a ich fungovanie} \label{ina}
 
 Základným problémom je teda\ldots{} Najprv sa pozrieme na nejaké vysvetlenie (časť~\ref{ina:nejake}), a potom na ešte nejaké (časť~\ref{ina:nejake}).\footnote{Niekedy môžete potrebovať aj poznámku pod čiarou.}
 
@@ -106,12 +93,12 @@ Niekedy je potrebné nadpisom označiť odsek. Text pokračuje hneď za nadpisom
 
 
 
-\section{Dôležitá časť} \label{dolezita}
+\section{Spracovanie používatelských dát} \label{dolezita}
 
 
 
 
-\section{Ešte dôležitejšia časť} \label{dolezitejsia}
+\section{Etické otázky} \label{dolezitejsia}
 
 
 
@@ -125,5 +112,5 @@ Niekedy je potrebné nadpisom označiť odsek. Text pokračuje hneď za nadpisom
 
 % týmto sa generuje zoznam literatúry z obsahu súboru literatura.bib podľa toho, na čo sa v článku odkazujete
 \bibliography{literatura}
-\bibliographystyle{alpha} % prípadne alpha, abbrv alebo hociktorý iný
+\bibliographystyle{plain} % prípadne alpha, abbrv alebo hociktorý iný
 \end{document}
