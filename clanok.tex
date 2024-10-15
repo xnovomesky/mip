@@ -10,6 +10,7 @@
 \usepackage{url} % príkaz \url na formátovanie URL
 \usepackage{hyperref} % odkazy v texte budú aktívne (pri niektorých triedach dokumentov spôsobuje posun textu)
 \usepackage{cite}
+\usepackage{graphicx}
 %\usepackage{times}
 
 \pagestyle{headings}
@@ -100,7 +101,21 @@ Niekedy je potrebné nadpisom označiť odsek. Text pokračuje hneď za nadpisom
 
 \section{Etické otázky} \label{dolezitejsia}
 
-
+\begin{figure}[htbp]
+  \centering
+  \begin{minipage}{0.45\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{dig1.png}
+    \caption{Popis prvého obrázku}
+    \label{fig:dig1}
+  \end{minipage}\hfill
+  \begin{minipage}{0.45\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{dig2.png}
+    \caption{Popis druhého obrázku}
+    \label{fig:dig2}
+  \end{minipage}
+\end{figure}
 
 
 \section{Záver} \label{zaver} % prípadne iný variant názvu
